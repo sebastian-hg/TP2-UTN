@@ -1,8 +1,9 @@
 package org.utn;
 
-import org.utn.gestores.*;
 import org.utn.gestores.impl.*;
 import lombok.AllArgsConstructor;
+import org.utn.interfaces.Classifiable;
+import org.utn.interfaces.Deserializable;
 import org.utn.recursos.GeneralAcademicResources;
 
 import java.util.Scanner;
@@ -12,7 +13,7 @@ public class Main {
 
     // dependencias
     private Deserializable deserializable;
-    private ResourceManager resourceManager;
+    private Classifiable.ResourceManager resourceManager;
 
     private GeneralAcademicResources initialize () {
         System.out.println(deserializable.getInitialData());
@@ -48,7 +49,7 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("Has elegido: Clasificación de recursos");
-                    // Llama a la funcionalidad específica de classificationOfResources
+
                     break;
                 case 3:
                     System.out.println("Has elegido: Evaluación de relevancia");
@@ -76,7 +77,7 @@ public class Main {
     public static void main(String[] args) {
 
         Deserializable deserializable = new DeserializableImpl();
-        ResourceManager resourceManager = new ResourceManagerImpl();
+        Classifiable.ResourceManager resourceManager = new ResourceManagerImpl();
 
         Main mainApp = new Main(deserializable,resourceManager);
         mainApp.start();

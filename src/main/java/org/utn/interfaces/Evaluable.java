@@ -1,6 +1,6 @@
 package org.utn.interfaces;
 
 public interface Evaluable {
-    String[] getCategoriesClassification();
-    void setCategory(String category);
+    double getScore();
+    void makeEvaluation(Evaluable evaluable);
 }

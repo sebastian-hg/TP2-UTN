@@ -1,0 +1,67 @@
+{
+  "bookList": [
+    {
+      "identifier": "Book",
+      "title": "Java Programming Basics",
+      "createDate": "2000-01-01",
+      "author": "John Doe",
+      "pageNumbers": 550,
+      "editorial": "Nacion"
+    },
+    {
+      "identifier": "Book",
+      "title": "python Programming Basics",
+      "createDate": "2022-01-01",
+      "author": "John Doe",
+      "pageNumbers": 150,
+      "editorial": "Clarin"
+    },
+    {
+      "identifier": "Book",
+      "title": "HTML Programming Basics",
+      "createDate": "2021-01-01",
+      "author": "Douglas Doe",
+      "pageNumbers": 250,
+      "editorial": "Planeta"
+    }
+  ],
+  "articleList": [
+    {
+      "identifier": "Article",
+      "title": "The Future of AI",
+      "createDate": "2024-05-15",
+      "author": "Jane Smith",
+      "keyWords": [
+        "AI",
+        "Technology",
+        "Future"
+      ],
+      "magazine": "Tech Monthly"
+    },
+    {
+      "identifier": "Article",
+      "title": "The Future of java",
+      "createDate": "2020-05-15",
+      "author": "Jane Smith",
+      "keyWords": [
+        "JDK",
+        "Technology",
+        "Future"
+      ],
+      "magazine": "Tech Monthly"
+    }
+  ],
+  "researchWorkList": [
+    {
+      "identifier": "researchWork",
+      "title": "Machine Learning in Data Science",
+      "createDate": "2023-09-25",
+      "author": "Michael Johnson",
+      "authors": [
+        "Michael Johnson",
+        "Sarah Lee"
+      ],
+      "researchLine": "Data Science"
+    }
+  ]
+}

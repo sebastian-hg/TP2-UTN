@@ -1,4 +1,4 @@
-package org.utn.gestores;
+package org.utn.interfaces;
 
 import org.utn.recursos.GeneralAcademicResources;
 
