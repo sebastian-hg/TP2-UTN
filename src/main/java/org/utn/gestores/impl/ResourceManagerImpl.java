@@ -3,17 +3,17 @@ package org.utn.gestores.impl;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.utn.gestores.ResourceManager;
-import org.utn.recursos.Article;
-import org.utn.recursos.Book;
-import org.utn.recursos.GeneralAcademicResources;
-import org.utn.recursos.ResearchWork;
+import org.utn.interfaces.Classifiable;
+import org.utn.interfaces.Evaluable;
+import org.utn.interfaces.FilterResource;
+import org.utn.recursos.*;
 
 import java.io.File;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-public class ResourceManagerImpl implements ResourceManager {
+public class ResourceManagerImpl implements ResourceManager, Classifiable, FilterResource {
 
     @Override
     public void createResource(GeneralAcademicResources generalAcademicResourcesList) {
@@ -300,4 +300,19 @@ public class ResourceManagerImpl implements ResourceManager {
         }
     }
 
+
+    @Override
+    public List<String> getCategoriesClassification() {
+        return List.of();
+    }
+
+    @Override
+    public void setCategories(String category) {
+
+    }
+
+    @Override
+    public boolean evaluate(AcademicResource academicResource) {
+        return false;
+    }
 }
