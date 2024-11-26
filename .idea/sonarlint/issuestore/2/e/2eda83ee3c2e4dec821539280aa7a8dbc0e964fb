@@ -1,0 +1,25 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†«Ä
+S	java:S106"9Replace this use of System.out or System.err by a logger.(†İÅúøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ŒÛªƒ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(°ÎA
+S	java:S106"9Replace this use of System.out or System.err by a logger.(óßİºúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‡ÃÃÂ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¥Û¬
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ï¥¨™
+N	java:S106"9Replace this use of System.out or System.err by a logger.(”ü„
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(¶ş®
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(—Š˜Íıÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(¹‡›€şÿÿÿÿ
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(Â¼ä£
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(¦®ÔÀøÿÿÿÿ
+W
+java:S10755"ARefactor your code to get this URI from a customizable parameter.( ²µ
+\
+java:S1075A"ARefactor your code to get this URI from a customizable parameter.(ô£õ£ûÿÿÿÿ
+\
+java:S1075M"ARefactor your code to get this URI from a customizable parameter.(Ş…ú™ÿÿÿÿÿ
+\
+java:S1075X"ARefactor your code to get this URI from a customizable parameter.(Ù¥·òùÿÿÿÿ
+b
+java:S1144T"GRemove this unused private "getReportByGeneralAcademicResource" method.(á›˜ßüÿÿÿÿ
