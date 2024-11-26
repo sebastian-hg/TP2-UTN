@@ -6,6 +6,7 @@ import org.utn.exception.BusinessException;
 import org.utn.exception.InvalidCategoryException;
 import org.utn.interfaces.Classifiable;
 import org.utn.interfaces.FilterResource;
+import org.utn.interfaces.ManageResource;
 import org.utn.recursos.*;
 
 import java.io.File;
@@ -13,7 +14,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-public class ResourceManagerImpl implements Classifiable.ResourceManager, Classifiable, FilterResource {
+public class ResourceManagerImpl implements ManageResource, Classifiable, FilterResource {
 
     @Override
     public void createResource(GeneralAcademicResources generalAcademicResourcesList) {
@@ -210,27 +211,6 @@ public class ResourceManagerImpl implements Classifiable.ResourceManager, Classi
             throw new BusinessException("Ha ocurrido un error inesperado" + e.getMessage());
         }
 
-    }
-
-    @Override
-    public List<Article> getAllArticles(GeneralAcademicResources generalAcademicResourcesList) {
-        return generalAcademicResourcesList.getArticleList() != null
-                ? generalAcademicResourcesList.getArticleList()
-                : List.of();
-    }
-
-    @Override
-    public List<Book> getAllBooks(GeneralAcademicResources generalAcademicResourcesList) {
-        return generalAcademicResourcesList.getBookList() != null
-                ? generalAcademicResourcesList.getBookList()
-                : List.of();
-    }
-
-    @Override
-    public List<ResearchWork> getAllResearchWork(GeneralAcademicResources generalAcademicResourcesList) {
-        return generalAcademicResourcesList.getResearchWorkList() != null
-                ? generalAcademicResourcesList.getResearchWorkList()
-                : List.of();
     }
 
     @Override

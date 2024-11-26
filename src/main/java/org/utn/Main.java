@@ -4,6 +4,7 @@ import org.utn.gestores.impl.*;
 import lombok.AllArgsConstructor;
 import org.utn.interfaces.Classifiable;
 import org.utn.interfaces.Deserializable;
+import org.utn.interfaces.ManageResource;
 import org.utn.recursos.GeneralAcademicResources;
 
 import java.util.Scanner;
@@ -13,7 +14,7 @@ public class Main {
 
     // dependencias
     private Deserializable deserializable;
-    private Classifiable.ResourceManager resourceManager;
+    private ManageResource resourceManager;
 
     private GeneralAcademicResources initialize () {
         System.out.println(deserializable.getInitialData());
@@ -22,7 +23,7 @@ public class Main {
     }
 
 
-    public void start() {
+    private void start() {
 
         Scanner scanner = new Scanner(System.in);
         Integer mainOption = 99;
@@ -77,7 +78,7 @@ public class Main {
     public static void main(String[] args) {
 
         Deserializable deserializable = new DeserializableImpl();
-        Classifiable.ResourceManager resourceManager = new ResourceManagerImpl();
+        ManageResource resourceManager = new ResourceManagerImpl();
 
         Main mainApp = new Main(deserializable,resourceManager);
         mainApp.start();
